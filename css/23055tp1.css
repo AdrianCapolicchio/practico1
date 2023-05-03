@@ -1,0 +1,49 @@
+
+        .right {
+           text-align: right;
+          
+          
+        }
+
+        .left {
+            text-align: left;
+           
+           
+         }
+ 
+
+        .uline {
+            text-decoration-line: underline;
+            text-decoration-style: dotted
+        }
+
+        .fondonegro{
+            background-color: black;
+        }
+
+        .oscurito{
+            background-color: rgb(85, 45, 160);
+        }
+
+        .botonfinito1 {
+            border: solid 1px black;
+            padding-bottom: 2px;
+            background-color: azure;
+            text-align-last: initial ;
+            width: 160px;
+            height: 25px;
+        }
+
+
+        .botoncustom{
+            --bs-btn-padding-y: .05rem;
+             --bs-btn-padding-x: .5rem;
+              --bs-btn-font-size: .5rem;
+        }
+
+
+
+        .fondito{
+            background-color: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,46,255,1) 98%);
+        }
