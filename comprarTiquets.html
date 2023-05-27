@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <link rel="stylesheet" href="../css/23055tp1.css"/>
-
+    <script src= "../js/comprarTiquets.js"></script>
 
     <title>23055 Capolicchio TP1</title>
     <link rel="icon" type="image/x-icon" href="images/cuadrito5.png">   
@@ -46,10 +46,10 @@
             <a class="nav-link text-secondary " href="#">El lugar y la fecha</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-secondary " href="#">Conviértete en orador</a>
+            <a class="nav-link text-secondary " href="./index.html">Conviértete en orador</a>
         </li> 
         <li class="nav-item">
-            <a class="nav-link" style="color:green" href="comprarTiquets.html">Comprar tickets</a>
+            <a class="nav-link" style="color:green" href="./comprarTiquets.html">Comprar tickets</a>
         </li>
       </ul>
       
@@ -92,7 +92,7 @@
           
           <div class="card-body center borderceleste">
             
-            <h5 class="card-title ">Trainee</h5>
+            <h5 class="card-title "><strong>Trainee</strong></h5>
             <p class="card-text ">Tienen un descuento</p>
             <p class="card-text ">50%</p>
 
@@ -103,7 +103,7 @@
           
           <div class="card-body center   borderamarillo">
             
-            <h5 class="card-title">Junior</h5>
+            <h5 class="card-title"><strong>Junior</strong></h5>
             <p class="card-text"> Tienen un descuento</p>
             <p class="card-text ">15%</p>
             <p class="card-text"> presentar documentación</p>
@@ -125,34 +125,38 @@
 
 
  
-<!-- inicio FORMULARIO  -->
+
 <div class="center m-1">
 <h6> VENTA</h6>
 <h1>VALOR DE TICKET $200</h1>
 
 </div>
+
+
+<!-- inicio FORMULARIO  -->
+
 <form>
-  <form action="/action_page.php">
+  
     
-    <div class="row">
+  <div class="row">
   
       <div class="col-md-2"></div>
   
-      <div class="col-md-4">
+      <div class="col-md-4 mb-2">
         <input type="text" class="form-control" placeholder="Nombre" name="email">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-2">
         <input type="text" class="form-control" placeholder="Apellido" name="pswd">
       </div>
       <div class="col-md-2"></div>
-    </div>
+  </div>
 
 
   <div class="row">
   
   
       <div class="col-md-2"></div>
-      <div class="col-md-8">
+      <div class="col-md-8 mb-2">
         <input type="email" class="form-control" placeholder="Correo" name="pswd1">
         </div>
       <div class="col-md-2"></div>
@@ -171,75 +175,46 @@
     </div>
     <div class="col-md-4 d-grid">
      <p class="left">Categoria</p>
-      <select id="select-oper">
-        <option value="general"> Entrada General</option>
-        <option value="suma"> Estudiante</option>
-        <option value="resta"> Trainee</option>
-        <option value="multi"> Junior</option>        
+      <select id="selectOper">
+        <option value="General"> Entrada General</option>
+        <option value="Estudiante"> Estudiante</option>
+        <option value="Trainee"> Trainee</option>
+        <option value="Junior"> Junior</option>        
       </select>
     </div>        
     
     
     <div class="col-md-2"></div>       
               
-             
-       <!--
-          </form>
-        </div>
-        
-        
-        
-        <div>
-          <button type="button" onclick="calcular()" class="btn btn-danger"> Calcular </button>
-           <button type="reset" onclick=reset class="btn btn-danger"> Reset</button>
-        </div>
-        <div>
-          <p > total: </p>
-          <p>  <input type="text" id="parTotal"> </p>
-        </div>
-
-      -->
-      <div class="row">
-      <div class="col-md-2"></div>       
-
-      <div class="d-grid col-md-3">
-        <button type="button" class="btn btn-primary width:100% btn-sm m-2">Total a Pagar: $ </button>
-        
-      
-        <p onclick="calcular()"></p>
-      </div>
+  </div>            
+       
 
       
-      <div class="d-grid col-md-5">
-        <!--<button type="submit" class="btn btn-primary width:100% btn-sm m-2"></button>-->
-        <p>  <input class=" bg-primary width:100% " type="text" id="parTotal"> </p>
- 
+  <div class="row">
+    <div class="col-md-2"></div>       
 
+    <div class="d-grid col-8 mb-2 left">
+      <p  id="resultado" class=" width:100% verdeclarito p-2 m-2">Total a Pagar: $ </p> 
+    </div>
 
-        </div>
-
-
-      <div class="col-md-2"></div> 
-      </div>
+    <div class="col-md-2"></div> 
+  </div>
   
 
-</div>
-<form>
-  <form action="/action_page.php">
+  
+
   <div class="row">
   
-  <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
   
-  <div class="d-grid  col-md-4">
-    <button type="button" onclick="reset" class="btn btn-success width:100%"> Borrar </button>
-  </div>
-  <div class="d-grid  col-md-4">
-    <button type="button" onclick="reset" class="btn btn-success width:100%"> Resumen </button>
-  </div>
+    <div class="d-grid  col-md-4 mb-2">
+      <input type="reset" class="btn btn-success width:100%"> 
+    </div>
+    <div class="d-grid  col-md-4 mb-2">
+      <button type="button" onclick= "calcular()"  class="btn btn-success width:100%"> Resumen </button>
+    </div>
 
   <div class="col-md-2"></div>
-</div>
-
 
 
 
@@ -255,9 +230,7 @@
   
 <!-- inicio footer  -->
     
-    
 
-<div class="card-footer"></div>
 
 <div class="row fondito float p-3">
   <div class="col">
@@ -294,16 +267,6 @@
 
 
   <!-- final footer  -->  
-
-
-
-
-    
-    
-
-
-
-
 
 
 </body>
