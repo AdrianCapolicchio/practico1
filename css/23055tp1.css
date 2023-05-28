@@ -1,78 +1,78 @@
 
-          .right {
-           text-align: right;
-          
-          
-        }
-
-        .left {
-            text-align: left;
-           
-           
-         }
- 
-
-        .uline {
-            text-decoration-line: underline;
-            text-decoration-style: dotted
-        }
-
-        .fondonegro{
-            background-color: black;
-        }
-
-        .oscurito{
-            background-color: rgb(85, 45, 160);
-        }
-
-        .botonfinito1 {
-            border: solid 1px black;
-            padding-bottom: 2px;
-            background-color: azure;
-            text-align-last: initial ;
-            width: 160px;
-            height: 25px;
-        }
+.right {
+ text-align: right;
 
 
-        .botoncustom{
-            --bs-btn-padding-y: .05rem;
-             --bs-btn-padding-x: .5rem;
-              --bs-btn-font-size: .5rem;
-        }
+}
+
+.left {
+  text-align: left;
+
+
+}
+
+
+.uline {
+  text-decoration-line: underline;
+  text-decoration-style: dotted
+}
+
+.fondonegro{
+  background-color: black;
+}
+
+.oscurito{
+  background-color: rgb(85, 45, 160);
+}
+
+.botonfinito1 {
+  border: solid 1px black;
+  padding-bottom: 2px;
+  background-color: azure;
+  text-align-last: initial ;
+  width: 160px;
+  height: 25px;
+}
+
+
+.botoncustom{
+  --bs-btn-padding-y: .05rem;
+   --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .5rem;
+}
 
 
 
-        .fondito{
-            background-color: rgb(2,0,36);
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,46,255,1) 98%);
-        }
+.fondito{
+  background-color: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,46,255,1) 98%);
+}
 
-        .borderazul{
-            border-style: solid;
-            border-color: blue;
+.borderazul{
+  border-style: solid;
+  border-color: blue;
 
-        }
-
-
-        .borderceleste{
-            border-style: solid;  
-            border-color: rgb(120, 120, 235);
-            
-        }
+}
 
 
-        .borderamarillo{
-            border-style: solid;
-            border-color: rgb(238, 241, 30);
-                        
-        }      
+.borderceleste{
+  border-style: solid;  
+  border-color: rgb(120, 120, 235);
+
+}
 
 
-        .pad0 {
-            padding: 0;
-        }
+.borderamarillo{
+  border-style: solid;
+  border-color: rgb(238, 241, 30);
 
-        .verdeclarito{
-            background-color: rgb(121, 235, 15);
-        }
+}      
+
+
+.pad0 {
+  padding: 0;
+}
+
+.verdeclarito{
+  background-color: rgb(121, 235, 15);
+}
